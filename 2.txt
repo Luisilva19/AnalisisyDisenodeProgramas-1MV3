@@ -1,0 +1,18 @@
+﻿
+    for(i=0; i<5; i++)
+    {
+        for(j=i+1; j<5; j++)
+        {
+            if(vector[j] < vector[i])
+            {
+                aux = vector[j];
+                vector[j] = vector[i];
+                vector[i] = vector[j];
+                vector[i] = aux;
+            }
+        }
+    }
+    for(i=0; i<5; i++)
+    {
+        cout << vector[i] << " ";
+    }
